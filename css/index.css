@@ -22,9 +22,12 @@ li {
   list-style: none;
 }
 
+body {
+  background-image: url(../img/pattern.png);
+}
+
 #container {
   font-family: 'DungGeunMo';
-  background-image: url(../img/pattern.png);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -274,4 +277,93 @@ li {
   margin-right: 10px;
   width: 100px;
   height: 30px;
+}
+
+
+@media(max-width : 1025px) {
+  #wrapper {
+    width: 80%;
+  }
+
+  .infoWrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infoWrap ul {
+    padding: 0;
+    width: 300px;
+  }
+
+  .infoWrap ul li {
+    margin: 0;
+  }
+}
+
+
+@media(max-width : 769px) {
+
+  #wrapper {
+    flex-direction: column;
+  }
+
+  .left-wrapper,
+  .right-wrapper {
+    width: 100%;
+    border: 2px solid black;
+  }
+
+  .left-outline,
+  .right-outline {
+    border: 2px dashed white;
+    width: 95%;
+    margin: 10px auto;
+    height: auto;
+  }
+
+  .left-section,
+  .right-section {
+    width: 98%;
+    margin: 10px auto;
+  }
+}
+
+
+@media(max-width : 426px) {
+  #wrapper {
+    margin: 0;
+    width: 100%;
+  }
+
+  .navBtn {
+    display: none;
+  }
+
+  .profile-typing {
+    margin: 10px;
+    font-size: 19px;
+  }
+
+  .infoWrap {
+    display: inline-block;
+  }
+
+  .profile,
+  .main-content {
+    margin: 10px auto;
+  }
+
+  .skillsWrap {
+    border: 1px solid red;
+  }
+
+  .skills-box {
+    border: 1px solid blue;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .skills-box li img {
+    width: 70px;
+  }
 }
