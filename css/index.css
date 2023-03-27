@@ -9,10 +9,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+ul,
+li {
+  list-style: none;
 }
 
 #container {
@@ -34,8 +41,8 @@ a {
 
 /* left */
 .left-wrapper {
-  border: solid gray;
-  border-width: 1px 0 1px 1px;
+  border: solid black;
+  border-width: 2px 0 2px 2px;
   background-color: #129FCE;
   width: 25%;
   display: flex;
@@ -69,14 +76,13 @@ a {
 
 .title {
   width: 95%;
-  margin: 20px 0 10px 0;
+  margin-top: 20px;
 }
 
 .profile {
   width: 95%;
   border: 1px solid #bbb9b9;
   border-radius: 10px;
-  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -87,6 +93,7 @@ a {
   width: 100%;
   height: 350px;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .profile-img p {
@@ -95,16 +102,13 @@ a {
   margin-top: 10px;
 }
 
-.profile-img p img {
-  width: 15px;
-  height: 15px;
-}
-
 .profile-content {
   border: solid #bbb9b9;
   border-width: 1px 0;
-  padding: 10px 0;
-  font-size: 15px;
+}
+
+.profile-content p {
+  margin: 10px 0;
 }
 
 @keyframes blink-effect {
@@ -117,36 +121,26 @@ a {
   animation: blink-effect 1s step-end infinite;
 }
 
-.profile-name {
-  text-align: left;
-}
-
-.profile-name p {
-  color: rgba(10, 10, 82, 0.777);
-}
-
-.profile-name span {
-  color: gray;
-}
-
-.email a {
-  color: #F37124;
-}
-
-.wave {
-  text-align: left;
-}
-
 .blog-link {
-  width: 80%;
+  margin-top: 10px;
+}
+
+.blog-link img {
+  width: 45px;
+  margin: 0 10px;
+}
+
+.blog-link img:hover {
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 
 
 /* right */
 .right-wrapper {
-  border: solid gray;
-  border-width: 1px 1px 1px 0;
+  border: solid black;
+  border-width: 2px 2px 2px 0;
   background-color: #129FCE;
   width: 75%;
   display: flex;
@@ -171,36 +165,113 @@ a {
   height: 98%;
   border-radius: 10px;
   margin-left: 2px;
+  position: relative;
+}
+
+.navBtn {
+  width: 80px;
+  position: absolute;
+  right: -80px;
+  top: 10%;
+}
+
+.navBtn ul {
+  padding: 0;
+}
+
+.navBtn ul li {
+  border: solid black;
+  border-width: 2px 2px 2px 0;
+  background-color: #129FCE;
+  width: 100%;
+  color: white;
+  margin-bottom: 2px;
+}
+
+.navBtn ul li:hover {
+  background-color: #f3f1f1;
+  color: black;
 }
 
 .profile-typing {
-  margin: 20px 20px 10px 20px;
+  margin-top: 20px;
+  margin-left: 25px;
   color: #129FCE;
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 20px;
 }
 
+
+/* main content */
 .main-content {
   border: 1px solid #bbb9b9;
   border-radius: 10px;
   width: 95%;
   height: 90%;
   margin: auto;
+  overflow: scroll;
+  position: relative;
 }
 
-.aboutWrap h1 {
-  font-size: 50px;
-  margin: 20px 0;
+.main-content h1 {
   text-align: center;
 }
 
-.inner-about {
-  border: 1px solid saddlebrown;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.aboutWrap,
+.skillsWrap,
+.projectWrap {
+  width: 85%;
+  margin: auto;
+}
+
+
+.character {
+  height: 300px;
+  margin: auto;
+  background-image: url(../img/miniroom.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 10px;
+  border: 2px solid #bbb9b9;
+  box-shadow: 0 0 5px;
 }
 
 .character img {
-  width: 250px;
+  width: 100px;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+}
+
+
+
+.infoWrap {
+  display: flex;
+  margin: 20px auto 100px;
+}
+
+.info {
+  width: 50%;
+}
+
+.infoWrap li {
+  display: flex;
+  margin: 20px 0 20px 30px;
+}
+
+.infoWrap li strong {
+  width: 40%;
+}
+
+
+/* skill */
+.skills-box {
+  display: flex;
+  margin: 10px 30px;
+}
+
+.skills-box li img {
+  margin-right: 10px;
+  width: 100px;
+  height: 30px;
 }

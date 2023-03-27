@@ -10,3 +10,6 @@ function typingText() {
   }
 }
 setInterval(typingText, 80);
+
+
+
