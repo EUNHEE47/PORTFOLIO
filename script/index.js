@@ -12,6 +12,9 @@ function typingText() {
 setInterval(typingText, 80);
 
 
+
+
+
 let btn = document.querySelectorAll('.btn');
 
 for (let i = 0; i < btn.length; i++) {
