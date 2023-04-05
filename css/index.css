@@ -1,6 +1,7 @@
 @font-face {
-  font-family: 'DungGeunMo';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  font-family: "DungGeunMo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -28,7 +29,7 @@ body {
 }
 
 #container {
-  font-family: 'DungGeunMo';
+  font-family: "DungGeunMo";
   width: 100%;
   height: 100vh;
   display: flex;
@@ -41,13 +42,11 @@ body {
   display: flex;
 }
 
-
-
 /* left */
 .left-wrapper {
   border: solid black;
   border-width: 2px 0 2px 2px;
-  background-color: #129FCE;
+  background-color: #129fce;
   width: 25%;
   display: flex;
   justify-content: right;
@@ -140,13 +139,11 @@ body {
   transition: 0.3s;
 }
 
-
-
 /* right */
 .right-wrapper {
   border: solid black;
   border-width: 2px 2px 2px 0;
-  background-color: #129FCE;
+  background-color: #129fce;
   width: 75%;
   display: flex;
   justify-content: left;
@@ -180,27 +177,34 @@ body {
   top: 10%;
 }
 
+#homeBtn {
+  background-color: #f3f1f1;
+  color: black;
+}
+
 .navBtn ul li {
   border: solid black;
   border-width: 2px 2px 2px 0;
-  background-color: #129FCE;
   width: 100%;
-  color: white;
   margin-bottom: 2px;
+  background-color: #129fce;
+  color: white;
+  border-radius: 0 5px 5px 0;
 }
 
 .navBtn ul li:hover {
   background-color: #f3f1f1;
   color: black;
+  border: solid black;
+  border-width: 2px 2px 2px 0;
 }
 
 .profile-typing {
   margin-top: 20px;
   margin-left: 25px;
-  color: #129FCE;
+  color: #129fce;
   font-size: 20px;
 }
-
 
 /* main content */
 .main-content {
@@ -224,7 +228,6 @@ body {
   margin: auto;
 }
 
-
 .character {
   height: 300px;
   margin: auto;
@@ -244,8 +247,6 @@ body {
   top: 50%;
 }
 
-
-
 .infoWrap {
   display: flex;
   margin: 20px auto 100px;
@@ -264,102 +265,16 @@ body {
   width: 40%;
 }
 
-
 /* skill */
-.skills-box {
-  display: flex;
-  margin: 10px 30px;
+.skills-box div {
+  margin-bottom: 5px;
 }
 
-.skills-box li img {
-  margin-right: 10px;
-  width: 100px;
-  height: 30px;
+.skills-box img {
+  width: 100%;
+  height: 2em;
 }
 
-
-@media(max-width : 1025px) {
-  #wrapper {
-    width: 80%;
-  }
-
-  .infoWrap {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .info {
-    width: 100%;
-  }
-
-  .infoWrap ul {
-    width: 80%;
-    margin: auto;
-  }
-
-  .infoWrap ul li {
-    margin: 0;
-  }
-}
-
-
-
-@media(max-width : 769px) {
-
-  #wrapper {
-    flex-direction: column;
-    margin: 0;
-    width: 100%;
-  }
-
-  .left-wrapper,
-  .right-wrapper {
-    width: 100%;
-    border: 2px solid black;
-  }
-
-  .left-outline,
-  .right-outline {
-    border: 2px dashed white;
-    width: 95%;
-    margin: 10px auto;
-    height: auto;
-  }
-
-  .left-section,
-  .right-section {
-    width: 98%;
-    margin: 10px auto;
-  }
-
-  .navBtn {
-    display: none;
-  }
-
-  .profile-typing {
-    text-align: center;
-  }
-
-  .profile,
-  .main-content {
-    margin: 10px auto;
-  }
-
-  .skillsWrap h5 {
-    font-size: 18px;
-  }
-
-  .skillsWrap {
-    border: 1px solid blue;
-  }
-
-  .skills-box {
-    border: 1px solid red;
-    margin: 10px 0;
-  }
-
-  .skills-box li img {
-    width: 70px;
-  }
+.col-sm-4 {
+  border: 1px solid red;
 }

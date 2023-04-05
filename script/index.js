@@ -11,25 +11,15 @@ function typingText() {
 }
 setInterval(typingText, 80);
 
-
-
-
-
-let btn = document.querySelectorAll('.btn');
+let btn = document.querySelectorAll(".btn");
 
 for (let i = 0; i < btn.length; i++) {
-  btn[i].addEventListener('click', function () {
+  btn[i].addEventListener("click", function () {
     for (let j = 0; j < btn.length; j++) {
-      btn[j].style.backgroundColor = '#129FCE';
-      btn[j].style.color = 'white';
-
+      btn[j].style.backgroundColor = "#129FCE";
+      btn[j].style.color = "white";
     }
-    this.style.backgroundColor = '#f3f1f1';
-    this.style.color = 'black';
+    this.style.backgroundColor = "#f3f1f1";
+    this.style.color = "black";
   });
-};
-
-
-
-
-
+}
