@@ -270,3 +270,41 @@ h1 {
 .project-cards:hover .card-hover-text {
   display: block;
 }
+
+@media (max-width: 768px) {
+  .wrap {
+    border: 4px solid black;
+  }
+
+  .inner-wrap {
+    flex-direction: column;
+    border: 1px solid red;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .left-wrap,
+  .left-outline {
+    width: 100%;
+    padding: 0.5em;
+    border-width: 2px;
+  }
+
+  .right-wrap,
+  .right-outline {
+    width: 100%;
+    padding: 0.5em;
+    border-width: 2px;
+  }
+
+  .nav {
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    z-index: 99;
+  }
+  .nav .tabBtn {
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+}
