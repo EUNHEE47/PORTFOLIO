@@ -50,19 +50,6 @@ function github() {
   window.open("https://github.com/EUNHEE47");
 }
 
-// let btn = document.querySelectorAll(".btn");
-
-// for (let i = 0; i < btn.length; i++) {
-//   btn[i].addEventListener("click", function () {
-//     for (let j = 0; j < btn.length; j++) {
-//       btn[j].style.backgroundColor = "#129FCE";
-//       btn[j].style.color = "white";
-//     }
-//     this.style.backgroundColor = "#f3f1f1";
-//     this.style.color = "black";
-//   });
-// }
-
 let content = `안녕하세요! 신입 개발자 박은희 입니다.`;
 let titleTyping = document.querySelector(".title-typing");
 let i = 0;
@@ -74,6 +61,40 @@ function typingText() {
   }
 }
 setInterval(typingText, 80);
+
+let btn = document.querySelectorAll(".tabBtn");
+
+// ---------------------------------------------------ㅅㅄㅄㅄㅄㅄㅂ
+// for (let i = 0; i < btn.length; i++) {
+//   btn[i].addEventListener("mouseover", function () {
+//     btn[i].style.backgroundColor = "#f3f1f1";
+//     btn[i].style.color = "black";
+//   });
+// }
+
+for (let i = 0; i < btn.length; i++) {
+  btn[i].addEventListener("click", function () {
+    for (let j = 0; j < btn.length; j++) {
+      btn[j].style.backgroundColor = "#129FCE";
+      btn[j].style.color = "white";
+    }
+    this.style.backgroundColor = "#f3f1f1";
+    this.style.color = "black";
+  });
+}
+
+// btn[i].addEventListener("mouseover", function () {
+//   for (let j = 0; j < btn.length; j++) {
+//     btn[j].addEventListener("mouseout", function () {
+//       btn[j].style.backgroundColor = "#129FCE";
+//       btn[j].style.color = "white";
+//     });
+//   }
+//   this.style.backgroundColor = "#f3f1f1";
+//   this.style.color = "black";
+// });
+
+// ---------------------------------------------------ㅅㅄㅄㅄㅄㅄㅂ
 
 // project card
 let projectCard = [
