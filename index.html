@@ -7,6 +7,10 @@
     <title>Portfolio</title>
     <!-- CSS only -->
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
@@ -16,7 +20,7 @@
       src="https://kit.fontawesome.com/101aaed8de.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="style/main.css" />
   </head>
   <body>
     <div class="wrap">
@@ -24,31 +28,18 @@
         <!-- left -->
         <div class="left-wrap">
           <div class="left-outline">
-            <div class="left-inner text-center p-3">
-              <div class="subject">
-                <p class="m-0 fw-bolder">Front-End Developer Portfolio</p>
-              </div>
-              <div class="profile-wrap p-3">
-                <div class="profile-img mb-3">
-                  <img src="img/cy.gif" style="width: 100%" />
+            <div class="left-inner">
+              <div class="profile-today">TODAY IS ...🌈</div>
+              <div class="profile-wrap">
+                <div class="profile-img">
+                  <img src="img/memoji.png" style="width: 100%" />
                 </div>
-                <div class="profile-today mb-3" style="color: #129fce">
-                  TODAY IS
-                  <span class="today-text"><!-- today is --></span>
-                </div>
-                <div class="profile-content mb-3 py-3">
-                  <p>언제나</p>
-                  <p class="blinkText m-0 fw-bolder" style="color: #129fce">
-                    소통하는
-                  </p>
-                  <p class="blinkText m-0 fw-bolder" style="color: #129fce">
-                    도전하는
-                  </p>
-                  <p class="blinkText m-0 fw-bolder" style="color: #129fce">
-                    성장하는
-                  </p>
-
-                  <p class="m-0">박은희가 되겠습니다.</p>
+                <div class="profile-content">
+                  <p>언제ㄴr</p>
+                  <p class="blinkText">"소통㈛는"</p>
+                  <p class="blinkText">"도전㈛는"</p>
+                  <p class="blinkText">"성ㅈБ㈛는"</p>
+                  <p class="">박은희ㄱr 되겠습LI⊂ト.</p>
                 </div>
               </div>
             </div>
@@ -57,81 +48,97 @@
         <!-- right -->
         <div class="right-wrap">
           <div class="right-outline">
-            <div class="right-inner p-3">
-              <nav class="nav">
-                <a href="#about" class="btn tabBtn homeBtn">Home</a>
-                <a href="#skills" class="btn tabBtn skillsBtn">Skills</a>
-                <a href="#project" class="btn tabBtn projectBtn">Project</a>
-                <a href="#contact" class="btn tabBtn contactBtn">Contact</a>
+            <div class="right-inner">
+              <nav>
+                <div class="navbar-toggleBtn">
+                  <a href="#"><i class="fas fa-bars"></i></a>
+                </div>
+                <div class="menu-box">
+                  <a href="#home" class="tabBtn menu-btn homeBtn">Home</a>
+                  <a href="#about" class="tabBtn menu-btn">About</a>
+                  <a href="#skills" class="tabBtn menu-btn">Skills</a>
+                  <a href="#works" class="tabBtn menu-btn">Works</a>
+                  <a href="#contact" class="tabBtn menu-btn">Contact</a>
+                </div>
               </nav>
-              <div class="title-typing fw-bolder" style="color: #129fce">
-                <!-- 타이핑 -->
+              <div class="title-text" style="width: 30em">
+                <marquee behavior="alternate" direction="left"
+                  >안녕하세요! 신입 개발자 박은희 입니다.</marquee
+                >
               </div>
-              <main class="main">
+              <main class="main text-center">
+                <!-- home -->
+                <section class="home" id="home">
+                  <h5>Front-End Developer Portfolio</h5>
+                  <div>
+                    <p class="intro-text"><!-- intro-text --></p>
+                  </div>
+                  <img src="img/cy.gif" />
+                </section>
                 <!-- about -->
                 <section class="about" id="about">
-                  <h1 class="text-center fw-bolder mb-4">About</h1>
-                  <div class="container mb-5">
+                  <h1>About</h1>
+                  <div class="container">
                     <div class="about-top row">
-                      <div class="col-sm-12 col-md-12 col-lg-6 p-0 text-center">
-                        <img src="img/adiantum.jpg" />
-                      </div>
-                      <div class="col-sm-12 col-md-12 col-lg-6 p-0">
+                      <div class="col-sm-12 col-md-12 col-lg-6 info">
                         <h3>박은희 (PARK EUNHEE)</h3>
                         <h5>🎂 1993.04.07</h5>
-                        <h5>📞 010-5454-4373</h5>
-                        <h5>📧 mii0329@naver.com</h5>
                       </div>
                     </div>
                   </div>
 
-                  <div class="container text-center mb-5">
+                  <div class="container">
                     <div class="about-bottom row">
-                      <div class="col-sm-12 col-md-6 col-lg-3 mb-5">
+                      <div class="col-sm-12 col-md-6 col-lg-3">
                         <h3>📕EDUCATION</h3>
-                        <p>2022.11.14 ~ 2023.03.08</p>
+                        <p>2022.11 ~ 2023.03</p>
                         <p>국제컴퓨터아트학원</p>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-3 mb-5">
+                      <div class="col-sm-12 col-md-6 col-lg-3">
                         <h3>👩‍💻CAREER</h3>
                         <p>2016.07 ~ 2022.08</p>
                         <p>타이드스퀘어</p>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-3 mb-5">
+                      <div class="col-sm-12 col-md-6 col-lg-3">
                         <h3>📝STUDY LOG</h3>
-                        <div class="notion" onclick="notion()">
-                          <img src="img/Notion-logo.svg.png" />
-                        </div>
+                        <a href="#"><img src="img/Notion-logo.svg.png" /></a>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-3 mb-5">
+                      <div class="col-sm-12 col-md-6 col-lg-3">
                         <h3>💡GIT HUB</h3>
-                        <div class="github" onclick="github()">
-                          <img src="img/github.png" />
-                        </div>
+                        <a href="#"><img src="img/github.png" /></a>
                       </div>
                     </div>
                   </div>
                 </section>
                 <!-- skills -->
-                <section class="skills text-center" id="skills">
-                  <h1 class="fw-bolder mb-5">Skills</h1>
+                <section class="skills" id="skills">
+                  <h1>Skills</h1>
                   <h5>Programming Languages & Tools</h5>
 
-                  <div class="main-skills-box mb-5"></div>
+                  <div class="main-skills-box"></div>
 
                   <h5>Used at least once</h5>
-                  <div class="once-skills-box mb-5"></div>
+                  <div class="once-skills-box"></div>
                 </section>
                 <!-- project -->
-                <section class="project text-center" id="project">
-                  <h1 class="fw-bolder mb-5">Project</h1>
+                <section class="works" id="works">
+                  <h1>Works</h1>
                   <div class="container">
                     <div class="row project-card-wrap"></div>
                   </div>
                 </section>
                 <!-- contact -->
-                <section class="contact text-center" id="contact">
-                  <h1 class="fw-bolder mb-5">Contact Me!</h1>
+                <section class="contact" id="contact">
+                  <h1>Contact</h1>
+                  <h4 class="mb-5">Thank you for reviewing my portfolio!</h4>
+                  <p>유저들이 쉽고 편리하게 사용할 수 있는 기능을</p>
+                  <p class="mb-5">제공할 수 있도록 노력하겠습니다.</p>
+                  <h5>
+                    <a href="mailto:'mii0329@naver.com'" class="btn mail-btn"
+                      ><img src="img/email.png" style="width: 1.5em" /> :
+                      mii0329@naver.com</a
+                    >
+                  </h5>
                 </section>
               </main>
             </div>

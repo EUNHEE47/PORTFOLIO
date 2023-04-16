@@ -1,0 +1,339 @@
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$main-color: #129fce;
+$inner-color: #f3f1f1;
+$border-color: #bbb9b9;
+
+@mixin element-default-val {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin wrap-value {
+  height: 100%;
+  border-radius: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DungGeunMo";
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+
+body {
+  background-image: url(../img/pattern.png);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: black;
+  }
+}
+
+ul,
+li,
+div,
+p,
+h1,
+h3,
+h5 {
+  @include element-default-val();
+}
+
+h1 {
+  font-weight: bolder;
+  margin-bottom: 1em;
+  color: $main-color;
+}
+
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-wrap {
+  width: 85vw;
+  height: 85vh;
+  display: flex;
+}
+
+// left
+.left-wrap,
+.left-outline,
+.left-inner {
+  @include wrap-value();
+}
+
+.left-wrap {
+  background-color: $main-color;
+  width: 30%;
+  padding: 0.5em 0 0.5em 0.5em;
+}
+
+.left-outline {
+  border: dashed $inner-color;
+  border-width: 2px 0 2px 2px;
+  padding: 0.5em 0 0.5em 0.5em;
+}
+
+.left-inner {
+  background-color: $inner-color;
+  padding: 1em;
+  text-align: center;
+}
+
+.profile-today,
+.title-typing {
+  height: 5%;
+}
+
+.profile-wrap,
+.main {
+  height: 95%;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-wrap {
+  justify-content: space-around;
+}
+
+.main {
+  justify-content: space-between;
+}
+
+.profile-img img {
+  border: 1px solid #bbb9b9;
+  border-radius: 100%;
+}
+
+.profile-content {
+  padding: 1em;
+  border: solid $border-color;
+  border-width: 1px 0;
+}
+
+@keyframes blink-effect {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.blinkText {
+  animation: blink-effect 1s step-end infinite;
+  color: $main-color;
+  font-weight: bolder;
+}
+
+// right
+.right-wrap,
+.right-outline,
+.right-inner {
+  @include wrap-value();
+}
+
+.right-wrap {
+  width: 70%;
+  background-color: $main-color;
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+.right-outline {
+  border: dashed $inner-color;
+  border-width: 2px 2px 2px 0;
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+.right-inner {
+  background-color: $inner-color;
+  border-width: 1px 1px 1px 0;
+  padding: 1em;
+  position: relative;
+}
+
+// nav
+nav {
+  position: absolute;
+  right: -4.5em;
+
+  a {
+    margin-bottom: 2px;
+    width: 4.5em;
+    border: solid black;
+    border-width: 1px 1px 1px 0;
+    height: 2.5em;
+    background-color: $main-color;
+    border-radius: 0 5px 5px 0;
+    color: $inner-color;
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+  }
+}
+
+.menu-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.homeBtn {
+  background-color: $inner-color;
+  color: black;
+}
+
+.navbar-toggleBtn {
+  display: none;
+}
+
+.home,
+.about,
+.skills,
+.works,
+.contact {
+  border: 1px solid red;
+  height: 50em;
+}
+
+// main
+.main {
+  overflow: scroll;
+}
+
+// home
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  h5 {
+    color: $main-color;
+    margin-bottom: 7rem;
+  }
+  div {
+    height: 5em;
+    margin-bottom: 7rem;
+  }
+  img {
+    width: 11em;
+    margin-bottom: 6rem;
+  }
+}
+
+// about
+.about-top {
+  align-items: center;
+  margin-bottom: 5em;
+  h3,
+  h5 {
+    margin-bottom: 0.5em;
+  }
+}
+
+.about-bottom {
+  margin-bottom: 5em;
+  div {
+    margin-bottom: 3em;
+  }
+  h3 {
+    margin-bottom: 0.5em;
+  }
+  img {
+    background-color: $main-color;
+    border-radius: 10px;
+    width: 3em;
+    padding: 0.5em;
+    box-shadow: 0 0 10px;
+
+    &:hover {
+      padding: 0.1em;
+    }
+  }
+}
+
+// skill
+.skills {
+  h5 {
+    margin-bottom: 0.5em;
+  }
+}
+.main-skills-box,
+.once-skills-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 5em;
+}
+
+// project
+
+.project-cards {
+  position: relative;
+  box-shadow: 0 0 10px;
+  border-radius: 10px;
+  img {
+    width: 100%;
+    height: 20em;
+    border-radius: 10px;
+  }
+
+  h5 {
+    opacity: 0;
+    background-color: #129fced4;
+    padding: 1.5em 0.5em;
+    border-radius: 20px;
+    color: $inner-color;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px;
+  }
+
+  &:hover .card-hover-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  &:hover img {
+    opacity: 0.3;
+  }
+}
+
+.contact {
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+.mail-btn {
+  box-shadow: 0 0 5px;
+  margin-bottom: 5em;
+
+  &:hover {
+    background-color: $main-color;
+    color: black;
+  }
+}
