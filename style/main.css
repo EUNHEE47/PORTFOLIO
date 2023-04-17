@@ -31,16 +31,11 @@ div,
 p,
 h1,
 h3,
+h4,
 h5 {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  font-weight: bolder;
-  margin-bottom: 1em;
-  color: #129fce;
 }
 
 .wrap {
@@ -191,7 +186,16 @@ nav a {
 .works,
 .contact {
   border: 1px solid red;
-  height: 50em;
+  margin-bottom: 3em;
+}
+.home h1,
+.about h1,
+.skills h1,
+.works h1,
+.contact h1 {
+  font-weight: bolder;
+  margin-bottom: 1em;
+  color: #129fce;
 }
 
 .main {
@@ -218,33 +222,29 @@ nav a {
   margin-bottom: 6rem;
 }
 
-.about-top {
-  align-items: center;
-  margin-bottom: 5em;
+.about-wrap img {
+  width: 1em;
 }
-.about-top h3,
-.about-top h5 {
-  margin-bottom: 0.5em;
+.about-wrap h3 {
+  margin-bottom: 1em;
 }
 
-.about-bottom {
-  margin-bottom: 5em;
+.info {
+  margin-top: 2em;
+  display: flex;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 8em;
 }
-.about-bottom div {
-  margin-bottom: 3em;
+.info div {
+  margin-right: 0.5em;
 }
-.about-bottom h3 {
-  margin-bottom: 0.5em;
+.info h4 {
+  color: #129fce;
 }
-.about-bottom img {
-  background-color: #129fce;
-  border-radius: 10px;
-  width: 3em;
-  padding: 0.5em;
-  box-shadow: 0 0 10px;
-}
-.about-bottom img:hover {
-  padding: 0.1em;
+
+.log-link:hover {
+  color: #129fce;
 }
 
 .skills h5 {
@@ -253,10 +253,26 @@ nav a {
 
 .main-skills-box,
 .once-skills-box {
+  width: 70%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 5em;
+  margin: 0 auto 3em;
+}
+
+.skill-content {
+  border: 1px solid red;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  text-align: left;
+  font-size: 0.9em;
+}
+.skill-content img {
+  width: 1rem;
+}
+.skill-content div {
+  margin-right: 5px;
 }
 
 .project-cards {

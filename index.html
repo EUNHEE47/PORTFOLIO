@@ -16,10 +16,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <script
-      src="https://kit.fontawesome.com/101aaed8de.js"
-      crossorigin="anonymous"
-    ></script>
+
     <link rel="stylesheet" href="style/main.css" />
   </head>
   <body>
@@ -62,7 +59,7 @@
                 </div>
               </nav>
               <div class="title-text" style="width: 30em">
-                <marquee behavior="alternate" direction="left"
+                <marquee behavior="scroll" direction="left"
                   >안녕하세요! 신입 개발자 박은희 입니다.</marquee
                 >
               </div>
@@ -79,33 +76,63 @@
                 <section class="about" id="about">
                   <h1>About</h1>
                   <div class="container">
-                    <div class="about-top row">
-                      <div class="col-sm-12 col-md-12 col-lg-6 info">
-                        <h3>박은희 (PARK EUNHEE)</h3>
-                        <h5>🎂 1993.04.07</h5>
+                    <div class="about-wrap row">
+                      <h3><img src="img/user.png" /> 박은희 (PARK EUNHEE)</h3>
+                      <div class="col-sm-12 col-md-6 col-lg-6 info">
+                        <div>
+                          <h4><img src="img/calendar.png" /></h4>
+                        </div>
+                        <div>
+                          <h4>BIRTH DATE</h4>
+                          <p>1993.04.07</p>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-
-                  <div class="container">
-                    <div class="about-bottom row">
-                      <div class="col-sm-12 col-md-6 col-lg-3">
-                        <h3>📕EDUCATION</h3>
-                        <p>2022.11 ~ 2023.03</p>
-                        <p>국제컴퓨터아트학원</p>
+                      <div class="col-sm-12 col-md-6 col-lg-6 info">
+                        <div>
+                          <h4><img src="img/call.png" /></h4>
+                        </div>
+                        <div>
+                          <h4>PHONE</h4>
+                          <p>010-5454-4373</p>
+                        </div>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-3">
-                        <h3>👩‍💻CAREER</h3>
-                        <p>2016.07 ~ 2022.08</p>
-                        <p>타이드스퀘어</p>
+                      <div class="col-sm-12 col-md-6 col-lg-6 info">
+                        <div>
+                          <h4><img src="img/open-book.png" /></h4>
+                        </div>
+                        <div>
+                          <h4>EDUCATION</h4>
+                          <p>2022.11 ~ 2023.03</p>
+                          <p>국제컴퓨터아트학원</p>
+                        </div>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-3">
-                        <h3>📝STUDY LOG</h3>
-                        <a href="#"><img src="img/Notion-logo.svg.png" /></a>
+                      <div class="col-sm-12 col-md-6 col-lg-6 info">
+                        <div>
+                          <h4><img src="img/career.png" /></h4>
+                        </div>
+                        <div>
+                          <h4>CAREER</h4>
+                          <p>2016.07 ~ 2022.08</p>
+                          <p>타이드스퀘어</p>
+                        </div>
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-3">
-                        <h3>💡GIT HUB</h3>
-                        <a href="#"><img src="img/github.png" /></a>
+                      <div class="col-sm-12 col-md-6 col-lg-6 info">
+                        <div>
+                          <h4><img src="img/Notion-logo.svg.png" /></h4>
+                        </div>
+                        <div>
+                          <h4>STUDY LOG</h4>
+                          <a href="#"><p class="log-link">NOTION</p></a>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-6 info">
+                        <div>
+                          <h4><img src="img/github.png" /></h4>
+                        </div>
+                        <div>
+                          <h4>GIT HUB</h4>
+                          <a href="#"><p class="log-link">GITHUB</p></a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -119,6 +146,19 @@
 
                   <h5>Used at least once</h5>
                   <div class="once-skills-box"></div>
+                  <div class="skill-content">
+                    <div><img src="img/check.png" alt="" /></div>
+                    <div>
+                      HTML,CSS를 이용하여 웹페이지 디자인 및 마크업을 할 수
+                      있으며 반응형 웹을 적용 할 수 있습니다.
+                    </div>
+                  </div>
+                  <div class="skill-content">
+                    <div><img src="img/check.png" alt="" /></div>
+                    <div>
+                      Git의 명령어를 사용하여 Repositories에 접근할 수 있습니다.
+                    </div>
+                  </div>
                 </section>
                 <!-- project -->
                 <section class="works" id="works">

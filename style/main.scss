@@ -49,14 +49,9 @@ div,
 p,
 h1,
 h3,
+h4,
 h5 {
   @include element-default-val();
-}
-
-h1 {
-  font-weight: bolder;
-  margin-bottom: 1em;
-  color: $main-color;
 }
 
 .wrap {
@@ -210,7 +205,12 @@ nav {
 .works,
 .contact {
   border: 1px solid red;
-  height: 50em;
+  margin-bottom: 3em;
+  h1 {
+    font-weight: bolder;
+    margin-bottom: 1em;
+    color: $main-color;
+  }
 }
 
 // main
@@ -240,34 +240,32 @@ nav {
 }
 
 // about
-.about-top {
-  align-items: center;
-  margin-bottom: 5em;
-  h3,
-  h5 {
-    margin-bottom: 0.5em;
+.about-wrap {
+  img {
+    width: 1em;
+  }
+  h3 {
+    margin-bottom: 1em;
   }
 }
 
-.about-bottom {
-  margin-bottom: 5em;
-  div {
-    margin-bottom: 3em;
-  }
-  h3 {
-    margin-bottom: 0.5em;
-  }
-  img {
-    background-color: $main-color;
-    border-radius: 10px;
-    width: 3em;
-    padding: 0.5em;
-    box-shadow: 0 0 10px;
+.info {
+  margin-top: 2em;
+  display: flex;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 8em;
 
-    &:hover {
-      padding: 0.1em;
-    }
+  div {
+    margin-right: 0.5em;
   }
+  h4 {
+    color: $main-color;
+  }
+}
+
+.log-link:hover {
+  color: $main-color;
 }
 
 // skill
@@ -278,10 +276,26 @@ nav {
 }
 .main-skills-box,
 .once-skills-box {
+  width: 70%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 5em;
+  margin: 0 auto 3em;
+}
+
+.skill-content {
+  border: 1px solid red;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  text-align: left;
+  font-size: 0.9em;
+  img {
+    width: 1rem;
+  }
+  div {
+    margin-right: 5px;
+  }
 }
 
 // project
