@@ -51,6 +51,13 @@ h5 {
   height: 85vh;
   display: flex;
 }
+@media (max-width: 768px) {
+  .inner-wrap {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+  }
+}
 
 .left-wrap,
 .left-outline,
@@ -100,8 +107,11 @@ h5 {
   justify-content: space-between;
 }
 
+.profile-img {
+  border-radius: 100%;
+}
 .profile-img img {
-  border: 1px solid #bbb9b9;
+  width: 100%;
   border-radius: 100%;
 }
 
@@ -170,6 +180,11 @@ nav a {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 768px) {
+  .menu-box {
+    display: none;
+  }
+}
 
 .homeBtn {
   background-color: #f3f1f1;
@@ -179,14 +194,34 @@ nav a {
 .navbar-toggleBtn {
   display: none;
 }
+@media (max-width: 768px) {
+  .navbar-toggleBtn a {
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    border-width: 1px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-toggleBtn {
+    display: block;
+    position: absolute;
+    right: 3.5em;
+    top: 1em;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+  }
+}
 
 .home,
 .about,
 .skills,
 .works,
 .contact {
-  border: 1px solid red;
-  margin-bottom: 3em;
+  padding: 1em 0 3em;
 }
 .home h1,
 .about h1,
@@ -202,24 +237,38 @@ nav a {
   overflow: scroll;
 }
 
+.title-text {
+  width: 30em;
+}
+@media (max-width: 768px) {
+  .title-text {
+    width: 100%;
+  }
+}
+
 .home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 .home h5 {
-  color: #129fce;
-  margin-bottom: 7rem;
-}
-.home div {
-  height: 5em;
-  margin-bottom: 7rem;
+  margin-bottom: 3em;
 }
 .home img {
-  width: 11em;
-  margin-bottom: 6rem;
+  width: 13em;
+}
+
+.intro-content-box {
+  width: 90%;
+  margin: auto;
+}
+@media (max-width: 426px) {
+  .intro-content-box h5 {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 426px) {
+  .intro-content-box p {
+    font-size: 0.5em;
+  }
 }
 
 .about-wrap img {
@@ -242,6 +291,12 @@ nav a {
 .info h4 {
   color: #129fce;
 }
+@media (max-width: 768px) {
+  .info {
+    padding: 0;
+    justify-content: center;
+  }
+}
 
 .log-link:hover {
   color: #129fce;
@@ -261,8 +316,7 @@ nav a {
 }
 
 .skill-content {
-  border: 1px solid red;
-  width: 90%;
+  width: 85%;
   margin: auto;
   display: flex;
   text-align: left;
@@ -273,6 +327,11 @@ nav a {
 }
 .skill-content div {
   margin-right: 5px;
+}
+@media (max-width: 426px) {
+  .skill-content {
+    font-size: 0.5em;
+  }
 }
 
 .project-cards {
@@ -300,7 +359,7 @@ nav a {
   cursor: pointer;
   box-shadow: 0 0 20px;
 }
-.project-cards:hover .card-hover-text {
+.project-cards:hover .card-hover-title {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -316,9 +375,28 @@ nav a {
 
 .mail-btn {
   box-shadow: 0 0 5px;
-  margin-bottom: 5em;
 }
 .mail-btn:hover {
   background-color: #129fce;
   color: black;
+}
+
+@media (max-width: 768px) {
+  .left-wrap,
+  .right-wrap {
+    width: 100vw;
+  }
+  .left-wrap,
+  .left-outline,
+  .left-inner,
+  .right-wrap,
+  .right-outline,
+  .right-inner {
+    padding: 0.5em;
+    border-width: 1px;
+  }
+  .profile-img img {
+    width: 15em;
+    margin-bottom: 1em;
+  }
 }/*# sourceMappingURL=main.css.map */
