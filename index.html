@@ -24,14 +24,16 @@
     <link rel="stylesheet" href="style/main.css" />
   </head>
   <body>
-    <div class="wrap">
+    <div class="wrap" id="wrap">
       <div class="inner-wrap">
         <!-- left -->
         <div class="left-wrap">
           <div class="left-outline">
             <div class="left-inner">
-              <div class="profile-today">TODAY IS ...🌈</div>
-              <div class="profile-wrap">
+              <div class="today-typing content-top">
+                TODAY IS <span class="today"></span>
+              </div>
+              <div class="profile-wrap content-bottom">
                 <div class="profile-img">
                   <img src="img/memoji.png" />
                 </div>
@@ -50,114 +52,52 @@
         <div class="right-wrap">
           <div class="right-outline">
             <div class="right-inner">
+              <!-- nav -->
               <nav>
-                <div class="navbar-toggleBtn">
-                  <a href="#"><i class="fa-solid fa-bars"></i></a>
+                <div class="nav-toggleBtn">
+                  <i class="fa-solid fa-bars"></i>
                 </div>
-                <div class="menu-box">
-                  <a href="#home" class="tabBtn menu-btn homeBtn">Home</a>
-                  <a href="#about" class="tabBtn menu-btn">About</a>
-                  <a href="#skills" class="tabBtn menu-btn">Skills</a>
-                  <a href="#works" class="tabBtn menu-btn">Works</a>
-                  <a href="#contact" class="tabBtn menu-btn">Contact</a>
-                </div>
+                <div class="menus"><!-- JS --></div>
               </nav>
-              <div class="title-text">
+              <div class="title-text content-top">
                 <marquee behavior="scroll" direction="left"
                   >Front-End Developer Portfolio</marquee
                 >
               </div>
-              <main class="main text-center">
+              <main class="main content-bottom">
                 <!-- home -->
-                <section class="home" id="home">
-                  <div class="row cols-12 intro-content-box">
-                    <div class="col-12">
-                      <h5>안녕하세요. 신입 개발자 박은희 입니다.</h5>
-                      <p>
-                        “도전은 저를 더 성장 시킬 수 있는 원동력이라고
-                        생각합니다.” <br /><br />
-                        전 직장 근무 시절, 개발 부서의 업무가 끊임없이 변화하는
-                        <br />도적적인 분야라는 것을 알게 되었습니다.
-                        <br /><br />
-                        저에게는 그 부분이 저에게는 큰 매력으로 느껴졌고,<br />
-                        프론트엔드 개발자로 커리어 전환을 하게 되었습니다.<br /><br />
-                        끊임없는 성장과 발전을 추구하며, <br />협업과
-                        커뮤니케이션 능력을 바탕으로 사용자가 원하는
-                        <br />최상의 경험을 제공하기 위해 노력하겠습니다.
-                      </p>
-                    </div>
-                    <div class="col-12">
-                      <img src="img/cy.gif" />
-                    </div>
+                <section class="home" id="Home">
+                  <div><h5>안녕하세요. 신입 개발자 박은희 입니다.</h5></div>
+                  <div>
+                    <p>
+                      끊임없는 성장과 발전을 추구하며, <br />협업과 커뮤니케이션
+                      능력을 바탕으로 사용자가 원하는 <br />최상의 경험을
+                      제공하기 위해 노력하겠습니다.
+                    </p>
+                  </div>
+                  <div>
+                    <img src="img/cy.gif" />
                   </div>
                 </section>
-                <!-- about -->
-                <section class="about" id="about">
+                <!-- About -->
+                <section class="about" id="About">
                   <h1>About</h1>
-                  <div class="container">
-                    <div class="about-wrap row">
-                      <h3><img src="img/user.png" /> 박은희 (PARK EUNHEE)</h3>
-                      <div class="col-sm-12 col-md-6 col-lg-6 info">
-                        <div>
-                          <h4><img src="img/calendar.png" /></h4>
-                        </div>
-                        <div>
-                          <h4>BIRTH DATE</h4>
-                          <p>1993.04.07</p>
-                        </div>
+                  <div class="about-wrap">
+                    <h3>
+                      <i class="fa-solid fa-user" style="color: #000000"></i>
+                      박은희 (PARK EUNHEE)
+                    </h3>
+                    <div class="aboutContent row"><!-- JS --></div>
+                    <div class="log-link">
+                      <div onclick="window.open('https://github.com/EUNHEE47')">
+                        <img src="img/github.png" />
                       </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6 info">
-                        <div>
-                          <h4><img src="img/call.png" /></h4>
-                        </div>
-                        <div>
-                          <h4>PHONE</h4>
-                          <p>010-5454-4373</p>
-                        </div>
-                      </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6 info">
-                        <div>
-                          <h4><img src="img/open-book.png" /></h4>
-                        </div>
-                        <div>
-                          <h4>EDUCATION</h4>
-                          <p>2022.11 ~ 2023.03</p>
-                          <p>국제컴퓨터아트학원</p>
-                        </div>
-                      </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6 info">
-                        <div>
-                          <h4><img src="img/career.png" /></h4>
-                        </div>
-                        <div>
-                          <h4>CAREER</h4>
-                          <p>2016.07 ~ 2022.08</p>
-                          <p>타이드스퀘어</p>
-                        </div>
-                      </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6 info">
-                        <div>
-                          <h4><img src="img/Notion-logo.svg.png" /></h4>
-                        </div>
-                        <div>
-                          <h4>STUDY LOG</h4>
-                          <a href="#"><p class="log-link">NOTION</p></a>
-                        </div>
-                      </div>
-                      <div class="col-sm-12 col-md-6 col-lg-6 info">
-                        <div>
-                          <h4><img src="img/github.png" /></h4>
-                        </div>
-                        <div>
-                          <h4>GIT HUB</h4>
-                          <a href="#"><p class="log-link">GITHUB</p></a>
-                        </div>
-                      </div>
+                      <div><img src="img/Notion-logo.svg.png" /></div>
                     </div>
                   </div>
                 </section>
                 <!-- skills -->
-                <section class="skills" id="skills">
+                <section class="skills" id="Skills">
                   <h1>Skills</h1>
                   <h5>Programming Languages & Tools</h5>
 
@@ -167,21 +107,17 @@
                   <div class="once-skills-box"></div>
                   <div class="skill-content-box"></div>
                 </section>
-                <!-- project -->
-                <section class="works" id="works">
+                <!-- procjet -->
+                <section class="works" id="Works">
                   <h1>Works</h1>
-                  <div class="container">
-                    <div class="row project-card-wrap"></div>
-                  </div>
+                  <div class="row project-card-wrap"></div>
                 </section>
                 <!-- contact -->
                 <section class="contact" id="contact">
                   <h1>Contact</h1>
-                  <h5>
-                    <a href="mailto:'mii0329@naver.com'" class="btn mail-btn"
-                      ><img src="img/email.png" style="width: 1.5em" /> :
-                      mii0329@naver.com</a
-                    >
+                  <h5>Thank you for reviewing my portfolio.</h5>
+                  <h5 class="btn mail-btn">
+                    <a href="mailto:'mii0329@naver.com'"> mii0329@naver.com</a>
                   </h5>
                 </section>
               </main>
@@ -195,6 +131,6 @@
       integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
       crossorigin="anonymous"
     ></script>
-    <script src="script/index.js"></script>
+    <script src="script/main.js"></script>
   </body>
 </html>
