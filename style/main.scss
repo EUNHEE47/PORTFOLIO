@@ -130,7 +130,7 @@ h5 {
 .home,
 .about,
 .skills,
-.works,
+.project,
 .contact {
   padding: 2em 0;
   h1 {
@@ -207,7 +207,7 @@ nav {
   background-color: $main-color;
   color: $line-color;
   cursor: pointer;
-  &:nth-child(1) {
+  &:first-child {
     background-color: $line-color;
     color: black;
   }
@@ -218,24 +218,45 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .nav-btn {
-    display: none;
+  nav {
+    z-index: 9;
+    position: fixed;
+    right: 0.5em;
+    top: 1em;
+  }
+  .nav-toggleBtn {
+    display: block;
   }
 
-  nav {
-    right: 1em;
-    top: 3em;
+  .nav-toggleBtn,
+  .nav-btn {
+    width: 3.5em;
+    padding: 0;
+    font-size: 13px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0;
   }
 
   .nav-toggleBtn {
-    background-color: $main-color;
-    display: block;
+    height: 2.5em;
     display: flex;
     justify-content: center;
-    font-size: 2.5em;
-    padding: 0.3em;
-    border-radius: 5px;
+    align-items: center;
+    &:nth-child(1) {
+      background-color: $main-color;
+      color: $line-color;
+    }
   }
+
+  .menus {
+    display: none;
+    line-height: 30px;
+  }
+
+  // .menus {
+  //   border: 1px solid red;
+  // }
 }
 
 // ----------------------main-------------------------
@@ -257,7 +278,7 @@ nav {
 // ----------------------about-------------------------
 
 .about {
-  height: 100%;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
 @media (max-width: 768px) {
@@ -266,7 +287,7 @@ nav {
   }
 }
 .info {
-  margin: 2em 0;
+  margin-top: 4em;
   display: flex;
   justify-content: center;
   vertical-align: middle;
@@ -276,7 +297,7 @@ nav {
 }
 
 .log-link {
-  margin-top: 1em;
+  margin-top: 4em;
   display: flex;
   justify-content: center;
   div {
@@ -330,6 +351,9 @@ nav {
 }
 
 // ----------------------project-------------------------
+.project {
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
 
 .project-card-wrap {
   padding: 0.5em;
@@ -392,6 +416,8 @@ nav {
 }
 .mail-btn {
   box-shadow: 0 0 5px;
+  img {
+  }
   a {
     text-decoration: none;
     color: black;
@@ -400,4 +426,9 @@ nav {
     transform: scale(1.13);
     transition: 0.3s;
   }
+}
+
+.sunny-img {
+  // border: 1px solid red;
+  width: 1em;
 }

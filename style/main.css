@@ -120,14 +120,14 @@ h5 {
 .home,
 .about,
 .skills,
-.works,
+.project,
 .contact {
   padding: 2em 0;
 }
 .home h1,
 .about h1,
 .skills h1,
-.works h1,
+.project h1,
 .contact h1 {
   font-weight: bolder;
   margin-bottom: 1em;
@@ -193,7 +193,7 @@ nav {
   color: #f3f1f1;
   cursor: pointer;
 }
-.nav-btn:nth-child(1) {
+.nav-btn:first-child {
   background-color: #f3f1f1;
   color: black;
 }
@@ -203,21 +203,37 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .nav-btn {
-    display: none;
-  }
   nav {
-    right: 1em;
-    top: 3em;
+    z-index: 9;
+    position: fixed;
+    right: 0.5em;
+    top: 1em;
   }
   .nav-toggleBtn {
-    background-color: #129fce;
     display: block;
+  }
+  .nav-toggleBtn,
+  .nav-btn {
+    width: 3.5em;
+    padding: 0;
+    font-size: 13px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0;
+  }
+  .nav-toggleBtn {
+    height: 2.5em;
     display: flex;
     justify-content: center;
-    font-size: 2.5em;
-    padding: 0.3em;
-    border-radius: 5px;
+    align-items: center;
+  }
+  .nav-toggleBtn:nth-child(1) {
+    background-color: #129fce;
+    color: #f3f1f1;
+  }
+  .menus {
+    display: none;
+    line-height: 30px;
   }
 }
 .main {
@@ -235,7 +251,7 @@ nav {
 }
 
 .about {
-  height: 100%;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
 @media (max-width: 768px) {
@@ -244,7 +260,7 @@ nav {
   }
 }
 .info {
-  margin: 2em 0;
+  margin-top: 4em;
   display: flex;
   justify-content: center;
   vertical-align: middle;
@@ -254,7 +270,7 @@ nav {
 }
 
 .log-link {
-  margin-top: 1em;
+  margin-top: 4em;
   display: flex;
   justify-content: center;
 }
@@ -306,6 +322,10 @@ nav {
   .skill-content {
     font-size: 0.5em;
   }
+}
+
+.project {
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
 .project-card-wrap {
@@ -371,4 +391,8 @@ nav {
 .mail-btn:hover {
   transform: scale(1.13);
   transition: 0.3s;
+}
+
+.sunny-img {
+  width: 1em;
 }/*# sourceMappingURL=main.css.map */

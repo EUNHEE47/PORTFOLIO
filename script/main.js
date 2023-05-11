@@ -43,10 +43,11 @@ setTimeout(typing, 1500);
 
 //--------------------------------------------nav
 
-let menus = ["Home", "About", "Skills", "Works", "Contact"];
+let menus = ["Home", "About", "Skills", "Project", "Contact"];
 
 menus.forEach((item) => {
-  let element = `<div onclick="location.href='#${item}'" class="nav-btn" id="#${item}">${item}</div>`;
+  let element = `<div onclick="location.href='#${item}'" class="nav-btn" id="#${item}">${item}</div>
+                `;
   $(".menus").append(element);
 });
 
@@ -63,7 +64,13 @@ for (let i = 0; i < btn.length; i++) {
   });
 }
 
-// about
+$(".nav-toggleBtn").click(function () {
+  // $(this).toggleClass("active");
+  // $('menus').toggleClass('')
+  $(".menus").slideToggle(400);
+});
+
+//--------------------------------------------about
 const aboutContent = [
   {
     icon: "fa-regular fa-calendar-days",
@@ -100,7 +107,7 @@ aboutContent.forEach((about) => {
   $(".aboutContent").append(element);
 });
 
-// skills
+//--------------------------------------------skills
 let mainSkillsUrl = [
   "https://skillicons.dev/icons?i=html",
   "https://skillicons.dev/icons?i=css",
@@ -109,10 +116,10 @@ let mainSkillsUrl = [
   "https://skillicons.dev/icons?i=react",
   "https://skillicons.dev/icons?i=nodejs",
   "https://skillicons.dev/icons?i=bootstrap",
-  "https://skillicons.dev/icons?i=linux",
   "https://skillicons.dev/icons?i=sass",
   "https://skillicons.dev/icons?i=github",
   "https://skillicons.dev/icons?i=git",
+  "https://skillicons.dev/icons?i=redux",
 ];
 
 mainSkillsUrl.forEach((item) => {
@@ -149,7 +156,7 @@ skillContent.forEach((content) => {
   $(".skill-content-box").append(element);
 });
 
-// project card
+//--------------------------------------------project card
 const projectCard = [
   {
     title: "ToDoList",
