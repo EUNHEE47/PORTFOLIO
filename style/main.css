@@ -175,8 +175,17 @@ h5 {
 }
 
 nav {
+  position: relative;
+}
+
+.menus {
   position: absolute;
-  right: -4.5em;
+  right: -5.5em;
+}
+@media (max-width: 768px) {
+  .menus {
+    display: none;
+  }
 }
 
 .nav-btn {
@@ -198,42 +207,33 @@ nav {
   color: black;
 }
 
-.nav-toggleBtn {
+.sub-nav {
+  position: fixed;
+  right: 1em;
+  top: 2em;
+  z-index: 10;
+}
+
+.nav-toggleBtn,
+.sub-nav-btn {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #129fce;
+  width: 4.5em;
+  padding: 0.5em;
+  color: #f3f1f1;
+  cursor: pointer;
+  text-align: center;
+}
+
+.nav-toggleBtn,
+.sub-menus {
   display: none;
 }
 
 @media (max-width: 768px) {
-  nav {
-    z-index: 9;
-    position: fixed;
-    right: 0.5em;
-    top: 1em;
-  }
   .nav-toggleBtn {
     display: block;
-  }
-  .nav-toggleBtn,
-  .nav-btn {
-    width: 3.5em;
-    padding: 0;
-    font-size: 13px;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 0;
-  }
-  .nav-toggleBtn {
-    height: 2.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .nav-toggleBtn:nth-child(1) {
-    background-color: #129fce;
-    color: #f3f1f1;
-  }
-  .menus {
-    display: none;
-    line-height: 30px;
   }
 }
 .main {

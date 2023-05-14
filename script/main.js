@@ -64,10 +64,21 @@ for (let i = 0; i < btn.length; i++) {
   });
 }
 
+let subMenus = ["Home", "About", "Skills", "Project", "Contact"];
+
+subMenus.forEach((subMenuBtn) => {
+  let subMenuBox = `<div onclick="location.href='#${subMenuBtn}'" class="sub-nav-btn" id="#${subMenuBtn}">${subMenuBtn}</div>`;
+  $(".sub-menus").append(subMenuBox);
+});
+
 $(".nav-toggleBtn").click(function () {
-  // $(this).toggleClass("active");
-  // $('menus').toggleClass('')
-  $(".menus").slideToggle(400);
+  $(this).toggleClass("active");
+  $(".sub-menus").slideToggle(400);
+});
+
+$(".sub-menus").click(function () {
+  $(".nav-toggleBtn").removeClass("active");
+  $(this).slideUp(400);
 });
 
 //--------------------------------------------about
