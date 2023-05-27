@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$main-color: #129fce;
+$line-color: #f3f1f1;
+$border-color: #a0a0a0;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DungGeunMo";
+}
+
+body {
+  background-color: $main-color;
+}
+
+.wrap {
+  height: 100vh;
+  padding: 0.5em;
+}
+
+.out-line {
+  border: 2px dashed $line-color;
+  border-radius: 10px;
+  height: 100%;
+  padding: 0.5em;
+}
+
+.inner {
+  background-color: $line-color;
+  height: 100%;
+  border-radius: 10px;
+  padding: 0.5em;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 3em;
+  h1 {
+    margin: 0;
+    font-size: 3em;
+  }
+}
+
+.content-wrap {
+  height: 80%;
+}
+
+.info {
+  margin: auto;
+}
+
+.link-box {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
+.item-link {
+  border-radius: 10px;
+  background-color: $main-color;
+  padding: 0.5em;
+  font-size: 1.3em;
+  margin-right: 1em;
+  width: 5em;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.tech {
+  list-style: none;
+  padding: 0;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 3em;
+  li {
+    margin-bottom: 1em;
+  }
+}
+
+.overview {
+  text-align: center;
+  h3 {
+    margin-bottom: 1em;
+  }
+  i {
+    font-size: 0.5em;
+  }
+}
+
+.img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  img {
+    width: 35%;
+    margin: 0.5em;
+  }
+}

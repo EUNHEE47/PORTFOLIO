@@ -168,10 +168,16 @@ skillContent.forEach((content) => {
 });
 
 //--------------------------------------------project card
+
+let _width = "1300";
+let _height = "900";
+let _left = Math.ceil((window.screen.width - _width) / 2);
+let _top = Math.ceil((window.screen.height - _height) / 2);
+
 const projectCard = [
   {
     title: "ToDoList",
-    url: "https://eunhee47.github.io/ToDoList/",
+    url: "toDoList.html",
     memo: "To Do List",
   },
   {
