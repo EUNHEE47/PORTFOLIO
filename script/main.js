@@ -187,7 +187,7 @@ const projectCard = [
   },
   {
     title: "miniGames",
-    url: "https://eunhee47.github.io/gameWorld",
+    url: "miniGames.html",
     memo: "Mini Games",
   },
   {
